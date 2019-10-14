@@ -1,7 +1,7 @@
 'use strict';
 
 const React = require('react-native');
-const ActivityAndroid = require('react-native-activity-android');
+const ActivityAndroid = require('@stone-cutter/react-native-activity-android');
 const {
   AppRegistry,
   StyleSheet,

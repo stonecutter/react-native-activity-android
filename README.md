@@ -1,6 +1,3 @@
-[![](https://api.travis-ci.org/jaysoo/react-native-activity-android.svg)](https://travis-ci.org/jaysoo/react-native-activity-android) [![](https://img.shields.io/npm/dm/react-native-activity-android.svg?style=flat-square)](https://www.npmjs.com/package/react-native-activity-android)
-
-
 ## react-native-activity-android
 
 Provides a method to move Android apps to the background (instead of exiting), and lifecycle hooks when
@@ -13,7 +10,7 @@ Useful if you want to capture listen for `BackButton` press and pause your appli
 1. Install module
 
     ```
-    npm install --save react-native-activity-android
+    npm install --save @stone-cutter/react-native-activity-android
     ```
 
 2. In `android/setting.gradle`
@@ -21,7 +18,7 @@ Useful if you want to capture listen for `BackButton` press and pause your appli
     ```
     ...
     include ':ActivityAndroid', ':app'
-    project(':ActivityAndroid').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-activity-android/android')
+    project(':ActivityAndroid').projectDir = new File(rootProject.projectDir, '../node_modules/@stone-cutter/react-native-activity-android/android')
     ```
 
 3. In `android/app/build.gradle`
@@ -73,7 +70,7 @@ Moving an application to the background.
 
 ```js
 import { BackAndroid } from 'react-native';
-import ActivityAndroid 'react-native-activity-android';
+import ActivityAndroid '@stone-cutter/react-native-activity-android';
 
 BackAndroid.addEventListener('hardwareBackPress', () => {
   // Note: callbacks are optional.
@@ -85,7 +82,7 @@ BackAndroid.addEventListener('hardwareBackPress', () => {
 Lifecycle hooks.
 
 ```js
-import ActivityAndroid 'react-native-activity-android';
+import ActivityAndroid '@stone-cutter/react-native-activity-android';
 
 ActivityAndroid.addEventListener('activityPause', () => {
   console.log('App is moved to the background');

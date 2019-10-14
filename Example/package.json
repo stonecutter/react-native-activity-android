@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "react-native": "^0.17.0",
-    "react-native-activity-android": "../"
+    "@stone-cutter/react-native-activity-android": "../"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-activity-android",
+  "name": "@stone-cutter/react-native-activity-android",
   "version": "2.0.0",
   "description": "Provides a method to pause Android app (Activity.moveTaskToBack), as well as lifecycle hooks when app is paused and resumed.",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaysoo/react-native-activity-android"
+    "url": "https://github.com/stonecutter/react-native-activity-android"
   },
   "files": [
     "android",
